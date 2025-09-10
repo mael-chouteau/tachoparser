@@ -12,7 +12,8 @@ For proper data verification, the public keys (root ca and member states) are re
 The Python scripts `pks1/dl_all_pks1.py` and `pks2/dl_all_pks2.py` download and rename all available public keys, first generation (digital tachograph) public keys are expected to be in `pks1`, second generation (smart tachograph) public keys are expected in `pks2`.
 
 ```bash
-cd pks1
+sudo apt-get install python3-lxml
+cd scripts/pks1
 ./dl_all_pks1.py
 cd ..
 cd pks2
